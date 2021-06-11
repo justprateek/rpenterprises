@@ -1,18 +1,20 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import AddExpensePage from './../components/AddExpensePage';
-import ExpenseDashboardPath from './../components/ExpenseDashBoard';
-import Header from './../components/Header';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Services from '../components/Services';
+import Home from '../components/Home';
+import Header from '../components/Header';
 
 
 
-const Approuters = ()=>(
+const AppRouters = ()=>(
     <BrowserRouter>
     <div>
         <Header />
         <Switch>
-        <Route path="/" component={ExpenseDashboardPath} exact = {true}/> 
-        <Route path="/addExpense" component={AddExpensePage} exact = {true}/> 
+        <Route path="/" component={Home} exact = {true}/> 
+        <Route path="/Services" component={Services} exact = {true}/> 
+        <Route path="/Clients" component={Client} exact = {true}/> 
+        <Route path="/Contact" component={Contact} exact = {true}/> 
 
         </Switch>
     </div>
@@ -20,4 +22,4 @@ const Approuters = ()=>(
     </BrowserRouter>
 );
 
-export default Approuters;
+export default AppRouters;
