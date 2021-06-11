@@ -1,0 +1,18 @@
+@import './../base/settings';
+@import './../base/base';
+
+
+.clientbox {
+    background-color: rgb(179, 135, 135);
+    margin: 50px;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    float: left;
+}
+
+.clientbox img {
+    width: 100px;
+    height: 100px;
+    margin: 2px 30px 5px auto;
+}
