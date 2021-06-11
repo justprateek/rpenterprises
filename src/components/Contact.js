@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact =()=>(
     <div>
-     C0ntact detail: 95648234985
+     Cntact detail: 95648234985
     </div>
 );
 

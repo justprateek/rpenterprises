@@ -1,0 +1,30 @@
+@import './../base/settings';
+@import './../base/base';
+
+.header {
+    display: flex;
+    background: $dark;
+    padding: $s-size;
+}
+.header h1 {
+    margin: 0px 250px 0px 50px;
+    font-size: $l-size;
+    color: $light;
+    // margin-right: 250px;
+}
+
+.header .links {
+    font-size: $m-size;
+    display: flex;
+    float: right;
+    color: rgb(26, 1, 1);
+    margin: 10px 30px;
+    font-family: fantasy;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: $light;
+    // font: sans-serif;
+}
+.header .links:hover {
+    color: rgb(2, 2, 32);
+}

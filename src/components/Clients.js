@@ -1,10 +1,10 @@
 import React from 'react';
 import Client_Box from './Client_box';
-
+import './../styles/components/client.scss';
 
 
 const Clients =()=>(
-    <div>
+    <div className="clients">
         <Client_Box 
             img='/assets/images/l&t.jpg'
             title="L&T (MIAL) (Under Proexcel Thane)"

@@ -4,15 +4,25 @@
 
 .clientbox {
     background-color: rgb(179, 135, 135);
-    margin: 50px;
-    width: 300px;
+    margin: 10px 20px 10px 20px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
     height: auto;
     align-items: center;
     float: left;
+    border: 1px solid black;
+    box-shadow: 1px 2px 10px black;
 }
 
 .clientbox img {
-    width: 100px;
+    width: 150px;
     height: 100px;
-    margin: 2px 30px 5px auto;
+    display: flex;
+    margin: auto;
+}
+.clientbox p {
+    font-size: $s-size;
+    color:blue;
+    text-align: center;
 }
