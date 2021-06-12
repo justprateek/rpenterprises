@@ -6,7 +6,7 @@
     height: 700px;
 }
 .home .home-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('/assets/images/carousel/home1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('/assets/images/carousel/home2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -32,17 +32,17 @@
     color: beige;
     text-shadow: 0px 2px 25px $dark;
 }
-.about-box {
-    background-color: rgb(34, 33, 33);
+.home-div {
+    background-color: $erieblack;
     padding: 5%;
 }
-.about-box2 {
+.about-box {
     background-color: $dark;
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ),url('/assets/images/carousel/aboutus-bg.jpg');
     background-size: cover;
     padding: 5%;
 }
-.about-box h2 {
+.home-div h2 {
     font-size: $xl-size;
     text-align: center;
     margin: 0;
@@ -51,12 +51,41 @@
 
 }
 
-.about-box .aboutus {
+.home-div .aboutus {
     padding: 20px 60px 100px 60px;
     text-align: center;
 }
 
-.aboutus p {
+.home-div p {
     color: $light;
     font-size: $m-size;
+}
+
+.products-div {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-div {
+    width: 100%;
+    height: 180px;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-div .blocks {
+    width: 30%;
+    height: 100px;
+    color: red;
+}
+.contact-div .contact-1 {
+    background-color: red;
 }

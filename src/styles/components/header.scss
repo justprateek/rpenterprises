@@ -3,11 +3,11 @@
 
 .header {
     display: flex;
-    background: $dark;
+    background: $Gunmetal;
     padding: $s-size;
 }
 .header h1 {
-    margin: 2px 250px 0px 50px;
+    margin: 4px 200px 0px 50px;
     font-size: $l-size;
     color: $light;
     // margin-right: 250px;
@@ -17,14 +17,12 @@
     font-size: $s-size;
     display: flex;
     float: right;
-    color: rgb(26, 1, 1);
     margin: 15px 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     letter-spacing: 2px;
     color: $light;
-    // font: sans-serif;
 }
 .header .links:hover {
-    color: rgb(189, 179, 47);
+    color:$burlywood;
 }

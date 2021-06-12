@@ -4,7 +4,9 @@ import './../styles/components/client.scss';
 
 
 const Clients =()=>(
-    <div className="clients">
+    <div className="client-heading">
+        <h2>Our Clients</h2>
+        <div className="clients">
         <Client_Box 
             img='/assets/images/l&t.jpg'
             title="L&T (MIAL) (Under Proexcel Thane)"
@@ -44,6 +46,8 @@ Delhi)"
 BULANDSHAHAR)"
         />
     </div>
+    </div>
+    
 );
 
 export default Clients;

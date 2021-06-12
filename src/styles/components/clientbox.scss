@@ -3,26 +3,31 @@
 
 
 .clientbox {
-    background-color: rgb(179, 135, 135);
+    background-color: white;
     margin: 10px 20px 10px 20px;
     padding: 5px;
     width: 250px;
-    height: 250px;
     height: auto;
     align-items: center;
     float: left;
     border: 1px solid black;
-    box-shadow: 1px 2px 10px black;
+    box-shadow: 1px 3px 15px 4px #000000;
+    transition: 0.2s ease;
+}
+.clientbox:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 2px 10px 2px #000000;
 }
 
 .clientbox img {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 140px;
     display: flex;
     margin: auto;
+    border: 1px solid;
 }
 .clientbox p {
     font-size: $s-size;
-    color:blue;
+    color: $dark;
     text-align: center;
 }

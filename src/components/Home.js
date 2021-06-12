@@ -1,5 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import Products from './Products';
+import Gallery from './Gallery';
 import './../styles/components/home.scss';
 
 
@@ -10,15 +12,15 @@ const Home =()=>(
         <div className="home-image">
         <p><Typewriter
   onInit={(typewriter) => {
-    typewriter.typeString('We provide excellent services in construction of Roads and Airports')
+    typewriter.typeString('We provide excellent services in construction of Highways and Airports')
 //       .pauseFor(2500)
       .start();
   }}
 /></p>
         
         </div>
+        <div className="home-div">
         <div className="about-box">
-        <div className="about-box2">
                 <h2>About Us</h2>
                         <div className="aboutus">
                                 <p>
@@ -42,6 +44,75 @@ const Home =()=>(
                         </div>
         </div>
         </div>
+        <div className="home-div">
+                <h2>Our Products</h2>
+                <div className="products-div">
+                        <Products 
+                                title="CONCRETE / ASHPHALT CUTTING MACHINES."
+                        />
+                        <Products 
+                                title="CONCRETE / ASHPHALT CUTTING BLADES"
+                        />
+                        <Products 
+                                title="KERB CUTTING MACHINES"
+                        />
+                        <Products 
+                                title="PQC (CONCRETE) CRACK REPAIR MATERIALS"
+                        />
+                        <Products 
+                                title="PAVER BLOCKS"
+                        />
+                        <Products 
+                                title="CEMENT AND CLAY BRICKS"
+                        />
+                        <Products 
+                                title="DOWEL BAR SLEEVES"
+                        />
+                        <Products 
+                                title="POLYTHENE (PLASTIC) SHEETS (SEPERATION MEMBRANE)"
+                        />
+                </div>
+        </div>
+        <div className="home-div">
+                <h2>Gallery</h2>
+                <div className="gallery">
+                <Gallery 
+                        img='/assets/images/carousel/gallery/img1.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img2.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img3.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img4.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img5.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img6.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img7.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img8.jfif'
+                />
+                <Gallery 
+                         img='/assets/images/carousel/gallery/img9.jfif'
+                />
+                </div>
+                
+        </div>
+
+        <div className="home-div contact-div">
+                <div className="contact-1 blocks">erg</div>
+                <div className="contact-2 blocks">dgrrg</div>
+                <div className="contact-3 blocks">grg</div>
+        </div>
+        
     </div>
 );
 

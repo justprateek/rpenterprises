@@ -4,7 +4,7 @@ import './../styles/components/header.scss';
 
 const Header = ()=>(
     <header className="header">
-        <h1>R P Enterprises</h1>
+        <h1>R P ENTERPRISES</h1>
         <Link className="links" to='/'>HOME</Link>
         <Link className="links" to='/Services'>SERVICES</Link>
         <Link className="links" to='/Clients'>OUR CLIENTS</Link>
