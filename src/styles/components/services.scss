@@ -55,13 +55,14 @@
     color: $burlywood
 }
 
-.services-details
-#div1 {
-    background-color: red;
+.services-details {
+    padding: 10px;
 }
-#div2 {
-    display: none;
+
+.services-details h4 {
+    font-size: $m-size;
 }
-#div3 {
-    display: none;
+.services-details img {
+    width: 250px;
+    height: 250px;
 }

@@ -21,11 +21,6 @@ import Services13 from '../components/services/Services13';
 import Services14 from '../components/services/Services14';
 import Services15 from '../components/services/Services15';
 import Services16 from '../components/services/Services16';
-import Services17 from '../components/services/Services17';
-import Services18 from '../components/services/Services18';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Button} from 'react-bootstrap';
-
 
 
 
@@ -53,8 +48,6 @@ const AppRouters = ()=>(
         <Route path="/Services/14" component={Services14} exact = {true}/>
         <Route path="/Services/15" component={Services15} exact = {true}/>
         <Route path="/Services/16" component={Services16} exact = {true}/>
-        <Route path="/Services/17" component={Services17} exact = {true}/>
-        <Route path="/Services/18" component={Services18} exact = {true}/>
         <Route path="/Clients" component={Clients} exact = {true}/> 
         <Route path="/Contact" component={Contact} exact = {true}/> 
         
