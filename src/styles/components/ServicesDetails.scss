@@ -10,11 +10,17 @@
     font-size: $l-size;
 
 }
+.services-Details a {
+   
+    text-decoration: none;
+}
 .services-Details p {
     font-size: $m-size;
+    text-decoration: none;
 }
 .services-Details img {
     width: 300px;
     height: 300px;
+    margin: 5px;
     // background-size: cover;
 }

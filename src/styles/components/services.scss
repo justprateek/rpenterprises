@@ -56,7 +56,11 @@
     border: none;
     font-size: $s-size;
     margin: 0;
-    color: $burlywood
+    color: $burlywood;
+    text-decoration:none;
+}
+.services-title a {
+    text-decoration: none;
 }
 
 .services-details {
@@ -64,9 +68,16 @@
 }
 
 .services-details h4 {
-    font-size: $m-size;
+    font-size: $l-size;
 }
 .services-details img {
     width: 250px;
     height: 250px;
+    margin: 5px;
+    // background-size: cover;
 }
+.services-details p {
+    font-size: $m-size;
+    height: 150px;
+}
+

@@ -7,10 +7,11 @@ import './../../styles/components/services.scss';
 // onClick={()=>{window.location.pathname = val.link}} 
 const Services1 =()=>(
     <div className="services">
-    <h2>Our Services</h2>
+    
 
     <div className="services-box">
     <div className="services-heading">
+    <h2>Our Services</h2>
             {servicesTitle.map((val)=>{
                 return (
                     <div className="services-title">
