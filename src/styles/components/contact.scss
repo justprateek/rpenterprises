@@ -1,0 +1,96 @@
+@import './../base/settings';
+@import './../base/base';
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    background-color: $Gunmetal;
+    text-align: center;
+}
+.contact-form h2 {
+    margin: 0;
+    padding: 30px;
+    color: $light2;
+}
+.container {
+    text-align: center;
+}
+.form .input-field {
+    width: 400px;
+    margin: 5px;
+    padding: 2px;
+}
+.form .form-submit {
+    margin: 5px 0 20px 0;
+    padding: 2px;
+    color: $extrabg;
+    background-color: rgb(8, 144, 255);
+}
+.form-submit :hover{
+
+}
+.contact-div {
+    width: 100%;
+    height: 180px;
+    background-color: #033a63;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding-left: 40px;
+}
+.contact-div .blocks {
+    width: 30%;
+    height: auto;
+    color:$bluewhite;
+    text-align: center;
+}
+.contact-div .blocks h2 {
+    color: $white;
+}
+.contact-div .contact-1 {
+    text-align: left;
+    padding-left: 20px;
+}
+.contact-div .contact-1 {
+    
+}
+.contact-div .contact-1 p {
+    margin: 0;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: $bluewhite;
+}
+.contact-div .contact-1 p:hover {
+   color: $light2;
+}
+
+
+.contact-div .contact-2 h5 svg {
+    color: $bluewhite;
+    font-size: $m-size;
+}
+.contact-div .contact-2 h4:hover {
+    color: $light2;
+    
+}
+
+
+
+.contact-div .contact-2 a {
+//    color: red;
+   font-size: $l-size;
+   margin: 5px;
+   color: $bluewhite;
+
+}
+.contact-div .contact-2 a:hover {
+    color: $light2;
+    
+}
+.contact-div .contact-3 {
+    padding-left: 40px;
+    text-align: left;
+}
+.contact-3 p:hover {
+    color: $light2;
+}

@@ -1,0 +1,72 @@
+@import './../base/settings';
+@import './../base/base';
+
+
+.services {
+    width: 100%;
+    background-color: $charcoal;
+    // margin: auto;
+    
+}
+.services h2 {
+    margin: 0;
+    padding: 40px 0 40px 0;
+    font-size: $l-size;
+    color: $dark;
+    text-align: center;
+}
+.services h2:hover {
+    color: $burlywood;
+}
+
+.services-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+}
+
+.services-box .services-heading {
+    width: 30%;
+    background-color: $charcoal;
+}
+
+.services-box .services-details {
+    width: 70%;
+    height: auto;
+    background-color: $light;
+}
+// #serve {
+//     display: none;
+// }
+
+.services-title {
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    background-color:$charcoal;
+    border: 1px solid $dark;
+    text-align: center;
+}
+.services-title:hover {
+    background-color: $erieblack;
+}
+.services-title p {
+    padding-top: 13px;
+    border: none;
+    font-size: $s-size;
+    margin: 0;
+    color: $burlywood
+}
+
+.services-details {
+    padding: 10px;
+}
+
+.services-details h4 {
+    font-size: $m-size;
+}
+.services-details img {
+    width: 250px;
+    height: 250px;
+}

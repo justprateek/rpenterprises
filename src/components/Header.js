@@ -1,12 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import './../styles/components/header.scss';
 
-const Header = () => (
-  <header>
-    <h1>Expensify</h1>
-    <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>
-    <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
-  </header>
+const Header = ()=>(
+    <header className="header">
+        <h1>R P ENTERPRISES</h1>
+        <Link className="links" to='/'>HOME</Link>
+        <Link className="links" to='/Services'>SERVICES</Link>
+        <Link className="links" to='/Clients'>OUR CLIENTS</Link>
+        <Link className="links" to='/Contact'>CONTACT US</Link>
+    </header>
 );
-
 export default Header;

@@ -1,0 +1,31 @@
+@import './../base/settings';
+@import './../base/base';
+
+.header {
+    display: flex;
+    width: 100%;
+    background: $Gunmetal;
+    padding: $xs-size;
+    // position: fixed;
+}
+.header h1 {
+    margin: 13px 320px 0px 50px;
+    font-size: $m-size;
+    color: $light;
+    letter-spacing: 3px;
+    // margin-right: 250px;
+}
+
+.header .links {
+    font-size: $s-size;
+    display: flex;
+    float: right;
+    margin: 15px 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: $light;
+}
+.header .links:hover {
+    color:$burlywood;
+}

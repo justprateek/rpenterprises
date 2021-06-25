@@ -1,0 +1,27 @@
+@import './../base/settings';
+@import './../base/base';
+
+.client-heading {
+    text-align: center;
+    width: 100%;
+    background-color: $charcoal;
+    // margin: 20px auto;
+}
+.client-heading h2 {
+    font-size: $l-size;
+    color: $dark;
+    margin: 0;
+    padding: 40px;
+}
+.client-heading h2:hover {
+    color: $burlywood;
+}
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $charcoal;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    // margin-top: 100px;
+}
