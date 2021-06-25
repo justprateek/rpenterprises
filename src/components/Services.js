@@ -1,113 +1,106 @@
 import React from 'react';
-import ServicesHeading from './ServicesHeading';
-import ServicesDetails from './ServicesDetails';
+import {Link} from 'react-router-dom';
+
 import './../styles/components/services.scss';
 
-
-const func= () =>{
-    // document.getElementById('div1').style.display="none"
-    // document.getElementById('div2').style.display="block"
-    console.log('hello');
-}
-
+const servicesTitle = [
+    {
+        title: 'PQC / DLC LAYING (concrete roads)',
+        link: '/Services/1'
+    },
+    {
+        title: 'ASHPHALT ROAD CONSTRUCTION',
+        link: '/Services/2'
+    },
+    {
+        title: 'PQC JOINT CUTTING & SEALING',
+        link: '/Services/4'
+    },
+    {
+        title: 'KERB CASTING & CUTTING',
+        link: '/Services/5'
+    },
+    {
+        title: 'PQC REPAIRS WITH SPECIAL MORTERS',
+        link: '/Services/6'
+    },
+    {
+        title: 'PQC ROAD RETEXTURING',
+        link: '/Services/7'
+    },
+    {
+        title: 'PQC FULL DEPTH CUTTING & DISMANTLING',
+        link: '/Services/8'
+    },
+    {
+        title: 'DOWEL BAR CUTTING',
+        link: '/Services/9'
+    },
+    {
+        title: 'THERMOPLASTIC ROAD MARKING',
+        link: '/Services/10'
+    },
+    {
+        title: 'WATER PROOFING',
+        link: '/Services/11'
+    },
+    {
+        title: 'ASHPALT ROAD CUTTING',
+        link: '/Services/12'
+    },
+    {
+        title: 'SPECIAL PURPOSE WORKS & CONSULTATION',
+        link: '/Services/13'
+    },
+    {
+        title: 'PAINTINGS (EPOXY)',
+        link: '/Services/14'
+    },
+    {
+        title: 'BUILDING / RETAINING WALL',
+        link: '/Services/15'
+    },
+    {
+        title: 'ROAD SIDE & MEDIAN DRAIN CONSTRUCTION',
+        link: '/Services/16'
+    },
+    {
+        title: 'CEMENT BRICKS / PAVER BLOCK MAKING',
+        link: '/Services/17'
+    },
+    {
+        title: 'GROUTING',
+        link: '/Services/18'
+    },
+];
+// onClick={()=>{window.location.pathname = val.link}} 
 const Services =()=>(
     <div className="services">
     <h2>Our Services</h2>
 
     <div className="services-box">
-    <div className="services-heading">
-    <ServicesHeading 
-            title='PQC / DLC LAYING (concrete roads)'
-        />
-        <ServicesHeading 
-            title='ASHPHALT ROAD CONSTRUCTION'
-        />
-        <ServicesHeading 
-            title='PQC JOINT CUTTING & SEALING'
-        />
-        <ServicesHeading 
-            title='KERB CASTING & CUTTING'
-        />
-        <ServicesHeading 
-            title='PQC REPAIRS WITH SPECIAL MORTERS'
-        />
-        <ServicesHeading 
-            title='PQC ROAD RETEXTURING'
-        />
-        <ServicesHeading 
-            title='PQC FULL DEPTH CUTTING & DISMANTLING'
-        />
-        <ServicesHeading 
-            title='DOWEL BAR CUTTING'
-        />
-        <ServicesHeading 
-            title='THERMOPLASTIC ROAD MARKING'
-        />
-        <ServicesHeading 
-            title='WATER PROOFING'
-        />
-        <ServicesHeading 
-            title='ASHPALT ROAD CUTTING'
-        />
-        <ServicesHeading 
-            title='SPECIAL PURPOSE WORKS & CONSULTATION'
-        />
-        <ServicesHeading 
-            title='PAINTINGS (EPOXY)'
-        />
-        <ServicesHeading 
-            title='BUILDING / RETAINING WALL'
-        />
-        <ServicesHeading 
-            title='ROAD SIDE & MEDIAN DRAIN CONSTRUCTION'
-        />
-        <ServicesHeading 
-            title='CEMENT BRICKS / PAVER BLOCK MAKING'
-        />
-        <ServicesHeading 
-            title='GROUTING'
-        />
-    </div>
-    <div className="services-details">
-        <div onClick={func()} id="div1"><ServicesDetails 
-                
-                heading='PQC / DLC LAYING (concrete roads)'
-                text='We do the PQC & DLC (concrete roads), Runways, taxiways, Airfield, etc laying
-    manually and by paver also. We have skilled special teams for good quality
-    work. We do take the job with our machinery, tools & tackle.'
-            img1 = '/assets/images/carousel/carousel1.jpg'
-            img2 = '/assets/images/carousel/carousel2.jpg'
-            img3 = '/assets/images/carousel/carousel3.jpg'
+        <div className="services-heading">
+                {servicesTitle.map((val)=>{
+                    return (
+                        <div className="services-title">
+                            <Link className="links" to={val.link}><p>{val.title}</p></Link>
+                           
+                         
+                            </div>
+                        );
+                })}
+        </div>
 
-            /></div>
-            <div id="div2"><ServicesDetails 
-                
-                heading='ASHPHALT ROAD CONSTRUCTION'
-                text='We do this job by paver as per standards. We have specialized team for better
-Quality of work. We do take the job with our machinery, tools & tackle'
-            img1 = '/assets/images/carousel/carousel1.jpg'
-            img2 = '/assets/images/carousel/carousel2.jpg'
-            img3 = '/assets/images/carousel/carousel3.jpg'
 
-            /></div>
-            <div id="div3"><ServicesDetails 
-                
-                heading='PQC JOINT CUTTING & SEALING / ASHPALT ROAD CUTTING'
-                text='We do the concrete (PQC) contraction, longitudinal, expansion joint cutting to
-various dimensions as per requirements with standards. We do the joint sealing
-operations with various methods with various materials such as polysulphide,
-polyurathene, neoprene, silicone etc. We also do the joint sealing for buildings also.'
-            img1 = '/assets/images/carousel/carousel1.jpg'
-            img2 = '/assets/images/carousel/carousel2.jpg'
-            img3 = '/assets/images/carousel/carousel3.jpg'
+        <div className="services-details" id="services-content">
+                <h4>PQC / DLC LAYING</h4>
+                <p>We do the PQC & DLC (concrete roads), Runways, taxiways, Airfield, etc laying
+manually and by paver also. We have skilled special teams for good quality
+work. We do take the job with our machinery, tools & tackle.</p>
+        </div>
+    </div>
+    </div>
 
-            /></div>
-         
-    </div>
-    </div>
-    
-       
-    </div>
 );
 
 export default Services;

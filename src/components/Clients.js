@@ -4,7 +4,7 @@ import './../styles/components/client.scss';
 
 
 const Clients =()=>(
-    <div className="client-heading">
+    <div className="client-heading" id="projects">
         <h2>Our Clients</h2>
         <div className="clients">
         <Client_Box 

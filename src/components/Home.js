@@ -1,7 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Products from './Products';
 import Gallery from './Gallery';
+import Footprints from './Footprints'
+import { FiPhoneCall } from "react-icons/fi";
+import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
 import './../styles/components/home.scss';
 
 
@@ -19,7 +24,7 @@ const Home =()=>(
 /></p>
         
         </div>
-        <div className="home-div">
+        <div className="home-div"  id="aboutus">
         <div className="about-box">
                 <h2>About Us</h2>
                         <div className="aboutus">
@@ -44,7 +49,7 @@ const Home =()=>(
                         </div>
         </div>
         </div>
-        <div className="home-div">
+        <div className="home-div" id="products">
                 <h2>Our Products</h2>
                 <div className="products-div">
                         <Products 
@@ -73,46 +78,62 @@ const Home =()=>(
                         />
                 </div>
         </div>
+        
+        <Footprints />
         <div className="home-div">
                 <h2>Gallery</h2>
                 <div className="gallery">
                 <Gallery 
-                        img='/assets/images/carousel/gallery/img1.jfif'
+                        img='/assets/images/carousel/gallery/img1.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img2.jfif'
+                         img='/assets/images/carousel/gallery/img2.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img3.jfif'
+                         img='/assets/images/carousel/gallery/img3.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img4.jfif'
+                         img='/assets/images/carousel/gallery/img4.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img5.jfif'
+                         img='/assets/images/carousel/gallery/img5.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img6.jfif'
+                         img='/assets/images/carousel/gallery/img6.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img7.jfif'
+                         img='/assets/images/carousel/gallery/img7.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img8.jfif'
+                         img='/assets/images/carousel/gallery/img8.jpg'
                 />
                 <Gallery 
-                         img='/assets/images/carousel/gallery/img9.jfif'
+                         img='/assets/images/carousel/gallery/img9.jpg'
                 />
                 </div>
                 
         </div>
 
-        <div className="home-div contact-div">
-                <div className="contact-1 blocks">erg</div>
-                <div className="contact-2 blocks">dgrrg</div>
-                <div className="contact-3 blocks">grg</div>
+        <div className="contact-div">
+                <div className="contact-1 blocks">
+                        <h2>Our Company</h2>
+                        <Link className="links" to='#aboutus'><p>About us</p></Link>
+                        <Link className="links" to='/Clients'><p>Our Projects</p></Link>
+                        <Link className="links" to='/Career'><p>Career at RP Enterprises</p></Link>
+                        <Link className="links" to='/Contact'><p>Contact us</p></Link>
+                </div>
+                <div className="contact-2 blocks">
+                        <h4>Email: rpeald@gmail.com <br></br>rpeald@yahoo.com</h4>
+                        <h4><FiPhoneCall />  +91 9936514886</h4>
+                        <a href=""><AiFillFacebook /></a>
+                        <a href=""><AiFillLinkedin /></a>
+                        <a href="mailto: repsld@gmail.com"><SiGmail /></a>
+                </div>
+                <div className="contact-3 blocks">
+                        <h2>Corporate office</h2>
+                        <p>303 Harwara, Saket Nagar, Dhomanganj<br></br> Prayagraj (U.P.) – 211 015</p>
+                </div>
         </div>
-        
     </div>
 );
 
