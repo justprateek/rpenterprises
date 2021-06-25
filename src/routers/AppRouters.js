@@ -24,7 +24,6 @@ import Services16 from '../components/services/Services16';
 
 
 
-console.log('test')
 const AppRouters = ()=>(
     <BrowserRouter>
     <div>
