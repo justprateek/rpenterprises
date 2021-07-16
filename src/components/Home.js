@@ -20,7 +20,7 @@ import './../styles/components/home.scss';
 const Home =()=>(
     <div className="home">
         <div className="home-image">
-        <p>'We provide excellent services in construction of Highways and Airports'</p>
+        <p>We provide excellent services in construction of <br></br><span className="highway">Highways & Airports</span></p>
         
         </div>
         <div className="home-div"  id="aboutus">
